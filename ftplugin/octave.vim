@@ -52,7 +52,7 @@ inoremap <buffer> <F9> <Esc> :execute line(".") 'w >> ~/.o-pipe'<CR>
 "send visual selected block to Octave
 vnoremap <buffer> r :w >> ~/.o-pipe<CR>
 
-"write and process mode (somehow mapping <C-Enter> does not work)
+"write and process mode (somehow mapping <C-Enter> does not work for me)
 inoremap <M-Enter> <Esc>:execute line(".") 'w >> ~/.o-pipe'<CR>o
 
 "send current file to Octave

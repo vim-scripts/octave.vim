@@ -12,8 +12,10 @@ xterm -T 'octave' -e perl ~/.vim/ftplugin/funnel.pl ~/.o-pipe octave&
 
 The script opens a second xterm with a running octave interpreter. Before this
 works, you have to have a ~/.vim/ftplugin directory with the bundled 
-funnel.pl script in it wich requires some perl libraries (see the comments at 
-the beginning of funnel.pl)
+ftplugin/funnel.pl script in it. 
+
+funnel.pl requires some perl libraries (see the comments at the beginning of
+funnel.pl)
 
 Then open an octave script file. If you add the lines
 
@@ -24,3 +26,6 @@ to your ~.vim/filetype.vim file (or create one with only these lines)
 then the vimscript octave.vim will be activated upon opening any file with 
 a filename matching *.m. The commands available at this point are elucidated
 in octave.vim.
+
+Note that the newly opened xterm will not close after quitting octave. You will
+have to close the window manually.
